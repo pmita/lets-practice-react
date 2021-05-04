@@ -1,0 +1,5 @@
+.music-player {
+  min-height: 60vh;
+  background: yellow;
+  @include flex(column, center, center);
+}
