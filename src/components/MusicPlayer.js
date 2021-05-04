@@ -1,11 +1,11 @@
 import React from 'react';
 
-const MusicPlayer = () => {
+const MusicPlayer = ({currentlyPlayingSong}) => {
     return(
         <div className="music-player">
-            <h1>Test</h1>
-            <h1>Test</h1>
-            <h1>Test</h1>
+            <img src={currentlyPlayingSong.albumCover}/>
+            <h3>currentlyPlayingSong.name</h3>
+            <h4>currentlyPlayingSong.artist</h4>
         </div>
     );
 }

@@ -1,5 +1,6 @@
 $main-color: black;
 $sec-color: pink;
+$grey-color: rgb(200, 200, 200);
 
 @mixin flex($direction, $justify, $align) {
   display: flex;
