@@ -1,4 +1,4 @@
-$main-color: black;
+$main-color: rgb(236, 200, 245);
 $sec-color: pink;
 $grey-color: rgb(200, 200, 200);
 
@@ -11,10 +11,11 @@ $grey-color: rgb(200, 200, 200);
 
 .App {
   min-height: 100vh;
-  min-width: 100vwh;
-  background: pink;
+  min-width: 100vw;
 }
 
 @import "global";
+@import "nav";
 @import "musicPlayer";
 @import "musicControls";
+@import "songsLibrary";

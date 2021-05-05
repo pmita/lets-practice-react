@@ -1,0 +1,43 @@
+.songs-library {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  overflow: scroll;
+  background: white;
+  box-shadow: 4px 4px 50px rgb(192, 192, 192);
+  @include flex(column, flex-start, center);
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+  h1 {
+    padding: 1rem;
+  }
+}
+
+.songs-library.active {
+  transform: translateX(0%);
+}
+
+.song-item {
+  padding: 2rem 1rem;
+  @include flex(column, center, center);
+  &:hover {
+    background: $main-color;
+    h3,
+    h4 {
+      color: white;
+    }
+  }
+  img {
+    width: 80%;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.song-item.active {
+  background: $main-color;
+  h3,
+  h4 {
+    color: white;
+  }
+}
